@@ -13,6 +13,7 @@ function setup(){
 
 function draw(){
     background("white");
+    if(position!==undefined){
   
     if(keyDown(LEFT_ARROW)){
         changePosition(-1,0);
@@ -28,7 +29,7 @@ function draw(){
     }
 
     drawSprites();
-
+    }
 }
 
 function changePosition(x,y){
